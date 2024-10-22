@@ -17,7 +17,7 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(child: HomePage()),
+      home: HomePage(),
     );
   }
 }

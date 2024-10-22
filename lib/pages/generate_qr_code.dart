@@ -14,7 +14,11 @@ class _GenerateQrCodeState extends State<GenerateQrCode> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Generate QR Code"),
+        title: Text(
+          "Generate QR Code",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -43,10 +47,11 @@ class _GenerateQrCodeState extends State<GenerateQrCode> {
               height: 20,
             ),
             ElevatedButton(
-                onPressed: () {
-                  setState(() {});
-                },
-                child: Text("Generate QR Code"))
+              onPressed: () {
+                setState(() {});
+              },
+              child: Text("Generate QR Code"),
+            ),
           ],
         ),
       ),
